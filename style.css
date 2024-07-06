@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+    display: block;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #333;
+    transition: .5s;
+}
+
+body::before,
+body::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    border-radius: 50%;
+}
+
+body::before {
+    top: 10px;
+    right: 250px;
+    width: 500px;
+    height: 500px;
+    background-color: dodgerblue;
+    box-shadow: 0px 0px 50px dodgerblue;
+}
+
+body::after {
+    bottom: 10px;
+    left: 250px;
+    width: 400px;
+    height: 400px;
+    background-color: deeppink;
+    box-shadow: 0px 0px 50px deeppink;
+}
